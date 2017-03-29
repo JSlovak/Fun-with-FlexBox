@@ -241,27 +241,33 @@ a {
     box-sizing: border-box; }
     .ordering-block .item.item-a {
       order: 3; }
+      @media (min-width: 900px) {
+        .ordering-block .item.item-a {
+          order: 1; } }
+      @media (min-width: 1200px) {
+        .ordering-block .item.item-a {
+          order: 3; } }
     .ordering-block .item.item-b {
       order: 2; }
+      @media (min-width: 900px) {
+        .ordering-block .item.item-b {
+          order: 2; } }
+      @media (min-width: 1200px) {
+        .ordering-block .item.item-b {
+          order: 4; } }
     .ordering-block .item.item-c {
       order: 1; }
+      @media (min-width: 900px) {
+        .ordering-block .item.item-c {
+          order: 3; } }
+      @media (min-width: 1200px) {
+        .ordering-block .item.item-c {
+          order: 2; } }
     .ordering-block .item.item-d {
       order: 4; }
-    @media (min-width: 900px) {
-      .ordering-block .item.item-a {
-        order: 1; }
-      .ordering-block .item.item-b {
-        order: 2; }
-      .ordering-block .item.item-c {
-        order: 3; }
-      .ordering-block .item.item-d {
-        order: 4; } }
-    @media (min-width: 1200px) {
-      .ordering-block .item.item-a {
-        order: 3; }
-      .ordering-block .item.item-b {
-        order: 4; }
-      .ordering-block .item.item-c {
-        order: 2; }
-      .ordering-block .item.item-d {
-        order: 1; } }
+      @media (min-width: 900px) {
+        .ordering-block .item.item-d {
+          order: 4; } }
+      @media (min-width: 1200px) {
+        .ordering-block .item.item-d {
+          order: 1; } }
